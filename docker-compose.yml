@@ -2,6 +2,11 @@ version: "3"
 
 services:
   web:
+    deploy:
+       resources:
+         limits:
+           cpus: "1"
+           memory: "256M"
     build: .
     container_name: web
     environment:
