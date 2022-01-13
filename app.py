@@ -4,7 +4,7 @@ from redis import Redis, RedisError
 import os
 
 # Connect to Redis
-redis = Redis(host="127.0.0.1", db=0, socket_connect_timeout=2, socket_timeout=2)
+redis = Redis(host="redis", db=0, socket_connect_timeout=2, socket_timeout=2)
 
 # Objeto da Classe Flask que vamos usar para configurar e executar a aplicação
 app = Flask(__name__)

@@ -15,9 +15,10 @@ spec:
       labels:
         app: myapp
     spec:
+      hostname: redis
       containers:
       - name: web
-        image: us-east1-docker.pkg.dev/xenon-music-338022/myfirstapp/myfirstapp:2.2
+        image: us-east1-docker.pkg.dev/xenon-music-338022/myfirstapp/myfirstapp:2.0
         env:
         - name: REDIS_HOST
           value: 127.0.0.1
